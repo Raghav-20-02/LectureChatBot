@@ -24,25 +24,25 @@ A Streamlit-powered chatbot that allows you to ask questions about lecture conte
    conda activate lecture-chatbot
    
 2. Clone the Repository:
-3. 
+
    ```bash
    git clone https://github.com/Raghav-20-02/Machine-Learning-Projects/tree/main
    cd Machine-Learning-Projects
    Obtain a Google Gemini API Key:
 
-4. Visit Google AI Studio: Go to the Google AI Studio. You will need a Google Cloud Project.
+3. Visit Google AI Studio: Go to the Google AI Studio. You will need a Google Cloud Project.
    Get API Key: Click on "Get API key" and follow the prompts. You will either create a new Google Cloud project or select an existing one.
    Copy API Key: Make sure to securely copy the API key as it will be shown only once.
 
-5. Install dependencies
+4. Install dependencies
    pip install -r requirements.txt
 
-6. Set Environment Variables:
+5. Set Environment Variables:
    
    Create a .env file in the project root directory.
    Add your Google API key in the .env file.
 
-7. Run the chatbot using
+6. Run the chatbot using
    streamlit run app.py
 
 
