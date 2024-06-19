@@ -91,12 +91,6 @@ def extract_lecture_content(url):
     return output_list
 
 
-lecture_urls = [
-    "https://stanford-cs324.github.io/winter2022/lectures/introduction/",
-    "https://stanford-cs324.github.io/winter2022/lectures/capabilities/",
-    "https://stanford-cs324.github.io/winter2022/lectures/harms-1/",
-    "https://stanford-cs324.github.io/winter2022/lectures/harms-2/"
-]
 
 def get_text_chunks(texts: Union[str, List[str]]) -> List[str]:
     """Splits text or a list of texts into chunks using RecursiveCharacterTextSplitter."""
@@ -151,6 +145,13 @@ def get_qa_chain(vectorstore):
 
 
 def main():
+    lecture_urls = [
+    "https://stanford-cs324.github.io/winter2022/lectures/introduction/",
+    "https://stanford-cs324.github.io/winter2022/lectures/capabilities/",
+    "https://stanford-cs324.github.io/winter2022/lectures/harms-1/",
+    "https://stanford-cs324.github.io/winter2022/lectures/harms-2/"
+]
+
     load_dotenv()
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
