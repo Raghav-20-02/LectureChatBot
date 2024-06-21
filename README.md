@@ -34,7 +34,8 @@ A Streamlit-powered chatbot that allows you to ask questions about lecture conte
    Get API Key: Click on "Get API key" and follow the prompts. You will either create a new Google Cloud project or select an existing one.
    Copy API Key: Make sure to securely copy the API key as it will be shown only once.
 
-4. Install dependencies
+4. Install dependencies:
+   
    pip install -r requirements.txt
 
 5. Set Environment Variables:
@@ -42,7 +43,7 @@ A Streamlit-powered chatbot that allows you to ask questions about lecture conte
    Create a .env file in the project root directory.
    Add your Google API key in the .env file.
 
-6. Run the chatbot using
+6. Run the chatbot using:
    streamlit run app.py
 
 
